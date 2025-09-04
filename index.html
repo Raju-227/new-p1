@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Food Menu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff7f0;
+    }
+
+    header {
+      background-color: #ff5722;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .item {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .item:hover {
+      transform: scale(1.03);
+    }
+
+    .item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .item-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .item-content h3 {
+      margin: 10px 0 5px;
+    }
+
+    .item-content p {
+      margin: 0;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #ff5722;
+      color: white;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍕 My Food Menu 🍔</h1>
+    <p>Delicious dishes just for you!</p>
+  </header>
+
+  <div class="menu">
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1600891963931-22d886c39d4f?auto=format&fit=crop&w=800&q=80" alt="Burger">
+      <div class="item-content">
+        <h3>Cheese Burger</h3>
+        <p>₹150</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1606755962771-3a3a84dfdedd?auto=format&fit=crop&w=800&q=80" alt="Pizza">
+      <div class="item-content">
+        <h3>Margherita Pizza</h3>
+        <p>₹250</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb36?auto=format&fit=crop&w=800&q=80" alt="Pasta">
+      <div class="item-content">
+        <h3>Italian Pasta</h3>
+        <p>₹200</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1603133872878-684f208fb86b?auto=format&fit=crop&w=800&q=80" alt="Fries">
+      <div class="item-content">
+        <h3>French Fries</h3>
+        <p>₹100</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 My Food Corner 🍽️
+  </footer>
+
+</body>
+</html>
+
